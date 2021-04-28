@@ -21,12 +21,35 @@ h1 {
 }
 
 h1:hover {
-  color: #ffb0b0;
+  color: #DC3545;
   cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn-outline-danger {
+  display: block;
+  margin: auto;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h3:hover {
+  color: #ffb0b0;
+}
+
+p {
+  font-style: italic;
+  color: #444;
 }
 
 .navbar .container .navbar-brand {
@@ -128,7 +151,7 @@ a {
   }
 }
 
-.bg-white {
+section {
   margin: 1% 0%;
 }
 
@@ -138,7 +161,6 @@ a {
 }
 
 .bg-white .container .recipe img {
-  width: 100%;
   border-radius: 5px;
 }
 
@@ -147,24 +169,12 @@ a {
   display: none;
 }
 
-.bg-white .container .recipe .description h3 {
-  font-weight: 600;
-}
-
-.bg-white .container .recipe .description h3:hover {
-  color: #ffb0b0;
-}
-
-.bg-white .container .recipe .description p {
-  font-style: italic;
-}
-
 .bg-white .container .recipe:hover {
   cursor: pointer;
   border-radius: 15px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-  height: 740px;
+  height: 760px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -173,5 +183,52 @@ a {
   display: block;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.light {
+  background-color: #f1f1e8;
+  padding: 1%;
+}
+
+.light h1 {
+  margin: 25px 16%;
+}
+
+.light .section {
+  padding: 5%;
+}
+
+.light .section img {
+  padding-left: 30%;
+}
+
+.light .section form input {
+  display: block;
+  margin: 20px 0%;
+  padding: 0.5% 10px;
+  width: 100%;
+  border: transparent;
+  border-bottom: 2px #DC3545 solid;
+  background-color: transparent;
+}
+
+.light .section form ::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.45);
+  font-style: italic;
+}
+
+.light .section form :-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.45);
+  font-style: italic;
+}
+
+.light .section form ::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.45);
+  font-style: italic;
+}
+
+.light .section form ::placeholder {
+  color: rgba(68, 68, 68, 0.45);
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */

@@ -33,10 +33,13 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top"
+      >
         <div class="container">
           <a class="navbar-brand" href="#"
-            ><span>G</span>reen <span>L</span>eaf</a>
+            ><span>G</span>reen <span>L</span>eaf</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -73,7 +76,7 @@
                 class="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
-              <i class="fas fa-search"></i>
+                <i class="fas fa-search"></i>
               </button>
             </form>
           </div>
@@ -103,10 +106,10 @@
           />
           <div class="carousel-caption text-left d-none d-md-block">
             <h2>Our Mission</h2>
-            <p>
+            <h6>
               Learn more about our mission to make a nourishing plant-based
               lifestyle accessible to everyone!
-            </p>
+            </h6>
           </div>
         </div>
         <div class="carousel-item drk">
@@ -117,9 +120,9 @@
           />
           <div class="carousel-caption text-left d-none d-md-block">
             <h2>Recipes</h2>
-            <p>
+            <h6>
               Get cooking with our collection of delicious plant-based recipes.
-            </p>
+            </h6>
           </div>
         </div>
         <div class="carousel-item drk">
@@ -130,10 +133,10 @@
           />
           <div class="carousel-caption text-left d-none d-md-block">
             <h2>Articles</h2>
-            <p>
+            <h6>
               Discover our in-depth articles on nutrition, plant-based living,
               and productivity.
-            </p>
+            </h6>
           </div>
         </div>
       </div>
@@ -158,38 +161,88 @@
     </div>
     <!-- First section -->
     <section class="bg-white">
-        <div class="container">
-            <h1 class=" text-center">Recipes</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="recipe">
-                        <img src="./images/recipe1.jpg" alt="">
-                        <div class="description">
-                            <h3>Strawberry Cheesecake Overnight Oats</h3>
-                            <p>Cheesecake exists in different flavours, shapes, and sizes all over the world, and it's definitely a dessert that many love. These overnight oats are inspired by the classic strawberry cheesecake, and it just might be your new breakfast favourite!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="recipe more" id="more">
-                        <img src="./images/recipe2.jpg" alt="">
-                        <div class="description">
-                            <h3>Vanilla Birthday Mug Cake</h3>
-                            <p>Nothing says 'birthday party' quite like a classic funfetti cake. A birthday isn't required to enjoy this treat though - this size is perfect for anyone who just wants to celebrate any day of the week with a piece of cake.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="recipe more" id="more">
-                        <img src="./images/recipe3.jpg" alt="">
-                        <div class="description">
-                            <h3>Double Chocolate Mug Cake</h3>
-                            <p>Chocolate cake is one of the most popular, if not the most popular cake flavours that we know of. With this recipe, you can quickly make a delicious single-serving chocolate cake (in a mug), with minimal effort.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="text-center">Recipes</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="recipe">
+              <img src="./images/recipe1.jpg" alt="" />
+              <div class="description">
+                <h3>Strawberry Cheesecake Overnight Oats</h3>
+                <p>
+                  Cheesecake exists in different flavours, shapes, and sizes all
+                  over the world, and it's definitely a dessert that many love.
+                  These overnight oats are inspired by the classic strawberry
+                  cheesecake, and it just might be your new breakfast favourite!
+                </p>
+                <p style="color: #81b214">
+                  <span style="margin-right: 5px">Read More</span
+                  ><i class="fas fa-arrow-circle-right"></i>
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="recipe more" id="more">
+              <img src="./images/recipe2.jpg" alt="" />
+              <div class="description">
+                <h3>Vanilla Birthday Mug Cake</h3>
+                <p>
+                  Nothing says 'birthday party' quite like a classic funfetti
+                  cake. A birthday isn't required to enjoy this treat though -
+                  this size is perfect for anyone who just wants to celebrate
+                  any day of the week with a piece of cake.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="recipe more" id="more">
+              <img src="./images/recipe3.jpg" alt="" />
+              <div class="description">
+                <h3>Double Chocolate Mug Cake</h3>
+                <p>
+                  Chocolate cake is one of the most popular, if not the most
+                  popular cake flavours that we know of. With this recipe, you
+                  can quickly make a delicious single-serving chocolate cake (in
+                  a mug), with minimal effort.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- <button type="button" class="btn btn-outline-danger">More <i style="margin-left: 5px;" class="fas fa-plus-circle"></i></button> -->
+      </div>
+    </section>
+    <section class="light">
+      <div class="container">
+        <h1>Join the Community !</h1>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12" style="height: 450px;
+          width: 350px;">
+            <div class="section">
+                <img src="./images/green.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="section"  style="height: 450px;
+              width: 450px;">
+                  <div class="info">
+                    <h3>Stay in the loop !</h3>
+                    <p>Sign up for our Newsletter to stay up-to-date with everything Green.</p>
+                    <p>When you join, we will send your plant-based jumpstart guide right in your inbox!</p>
+                  </div>
+                  <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <button type="button" class="btn btn-outline-danger">Subscribe<i style="margin-left: 5px;" class="fas fa-envelope"></i></button>
+                    </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>
