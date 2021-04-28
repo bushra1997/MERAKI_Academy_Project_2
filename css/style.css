@@ -54,7 +54,7 @@ p {
 
 .navbar .container .navbar-brand {
   background-color: #f2f2f2;
-  color: #50684b;
+  color: #5c8653;
   padding: 3% 1.5% 1%;
   font-size: 25px;
   margin-top: -3.2%;
@@ -73,10 +73,10 @@ p {
 }
 
 .navbar .container .navbar-nav .nav-item .nav-link {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 200;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .navbar .container form input {
@@ -184,7 +184,7 @@ section {
   border-radius: 15px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-  height: 760px;
+  height: 780px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -196,7 +196,7 @@ section {
 }
 
 .light h1 {
-  margin: 25px 16%;
+  margin: 25px 10%;
 }
 
 .light .width {
