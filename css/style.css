@@ -43,7 +43,7 @@ h3 {
 }
 
 h3:hover {
-  color: #ffb0b0;
+  color: #dc3545;
 }
 
 p {
@@ -52,7 +52,7 @@ p {
 }
 
 .navbar .container .navbar-brand {
-  background-color: #eaede8;
+  background-color: #f2f2f2;
   color: #50684b;
   padding: 3% 1.5% 1%;
   font-size: 25px;
@@ -72,7 +72,7 @@ p {
 }
 
 .navbar .container .navbar-nav .nav-item .nav-link {
-  color: #eaede8;
+  color: #f2f2f2;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1.5px;
@@ -88,28 +88,28 @@ p {
 }
 
 .navbar .container form ::-webkit-input-placeholder {
-  color: #eaede8;
+  color: #f2f2f2;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1.5px;
 }
 
 .navbar .container form :-ms-input-placeholder {
-  color: #eaede8;
+  color: #f2f2f2;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1.5px;
 }
 
 .navbar .container form ::-ms-input-placeholder {
-  color: #eaede8;
+  color: #f2f2f2;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1.5px;
 }
 
 .navbar .container form ::placeholder {
-  color: #eaede8;
+  color: #f2f2f2;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: 1.5px;
@@ -135,7 +135,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel .carousel-inner .carousel-caption {
@@ -144,46 +144,24 @@ p {
   left: 120px;
 }
 
-.carousel .carousel-inner .carousel-caption h1 {
-  font-weight: bold;
-  letter-spacing: 0.5px;
+.carousel .carousel-inner .carousel-caption h2,
+.carousel .carousel-inner .carousel-caption h6 {
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 991.98px) {
-  .navbar .container .navbar-brand {
-    padding: 5% 2.5% 1%;
-    font-size: 15px;
-    margin-top: -5%;
-    border-radius: 15px;
-  }
-  .navbar .container .navbar-brand span {
-    font-size: 25px;
-  }
-  .navbar .container .navbar-toggler-icon {
-    color: #eaede8;
-    font-size: 25px;
-  }
-  .navbar .container div {
-    text-align: center;
-    background-color: #41580e;
-  }
-  .navbar .container .navbar-nav .nav-item {
-    margin-right: 0px;
-    padding: 1.5%;
-  }
-  .navbar .container form {
-    display: none;
-  }
-  .carousel .carousel-indicators {
-    display: none;
-  }
-  .carousel .carousel-inner .carousel-item {
-    height: auto;
-  }
+.carousel .carousel-inner .carousel-caption h6 {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 section {
   margin: 1% 0%;
+}
+
+.light {
+  background-color: #f2f2f2;
+  padding: 1%;
 }
 
 .bg-white .container .recipe {
@@ -216,13 +194,13 @@ section {
           transition-duration: 1s;
 }
 
-.light {
-  background-color: #eaede8;
-  padding: 1%;
-}
-
 .light h1 {
   margin: 25px 16%;
+}
+
+.light .width {
+  height: 450px;
+  max-width: 450px;
 }
 
 .light .section {
@@ -263,5 +241,72 @@ section {
 .light .section form ::placeholder {
   color: rgba(68, 68, 68, 0.45);
   font-style: italic;
+}
+
+footer .section1 .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .section1 .social-icons ul li {
+  list-style: none;
+  margin: 0px 25px;
+}
+
+footer .section1 .social-icons ul li a {
+  color: #dc3545;
+}
+
+footer .section1 .social-icons ul li a i {
+  font-size: 26px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container .navbar-brand {
+    padding: 5% 2.5% 1%;
+    font-size: 15px;
+    margin-top: -5%;
+    border-radius: 15px;
+  }
+  .navbar .container .navbar-brand span {
+    font-size: 25px;
+  }
+  .navbar .container .navbar-toggler-icon {
+    color: #f2f2f2;
+    font-size: 25px;
+  }
+  .navbar .container div {
+    text-align: center;
+    background-color: #41580e;
+  }
+  .navbar .container .navbar-nav .nav-item {
+    margin-right: 0px;
+    padding: 1.5%;
+  }
+  .navbar .container form {
+    display: none;
+  }
+  .carousel .carousel-indicators {
+    display: none;
+  }
+  .carousel .carousel-inner .carousel-item {
+    height: auto;
+  }
+  .light {
+    text-align: center;
+  }
+  .light .section {
+    padding: 0px;
+  }
+  .light .section img {
+    padding-left: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

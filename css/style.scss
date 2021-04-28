@@ -1,7 +1,7 @@
 $colors: (
   "Green": #50684b,
   "lime": #bfdcae,
-  "light": #eaede8,
+  "light": #f2f2f2,
   "pink": #ffb0b0,
 );
 $fonts: (
@@ -45,7 +45,7 @@ h3 {
   font-weight: 600;
 }
 h3:hover {
-  color: #ffb0b0;
+  color: #dc3545;
 }
 p {
   font-style: italic;
@@ -114,20 +114,116 @@ p {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba($color: #000000, $alpha: 0.45);
+      background-color: rgba($color: #000000, $alpha: 0.5);
     }
     .carousel-caption {
       top: auto;
       bottom: 75px;
       left: 120px;
-      h1 {
-        font-weight: bold;
-        letter-spacing: 0.5px;
+      h2,
+      h6 {
+        letter-spacing: 0.8px;
+        margin-bottom: 10px;
+      }
+      h6 {
+        font-size: 20px;
+        font-weight: 200;
       }
     }
   }
 }
 
+section {
+  margin: 1% 0%;
+}
+.light {
+  background-color: map-get($colors, "light");
+  padding: 1%;
+}
+.bg-white {
+  .container {
+    .recipe {
+      padding: 5%;
+      // border: black solid 1px;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .description {
+        padding: 2.5% 5%;
+      }
+    }
+    .recipe:hover {
+      cursor: pointer;
+      border-radius: 15px;
+      transition-duration: 1s;
+      height: 760px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      .description {
+        display: block;
+        transition-duration: 1s;
+      }
+    }
+  }
+}
+.light {
+  h1 {
+    margin: 25px 16%;
+  }
+  .width {
+    height: 450px;
+    max-width: 450px;
+  }
+  .section {
+    padding: 5%;
+    height: 450px;
+    img {
+      height: 100%;
+      padding-left: 30%;
+    }
+    form {
+      input {
+        display: block;
+        margin: 20px 0%;
+        padding: 0.5% 10px;
+        width: 100%;
+        border: transparent;
+        border-bottom: 2px #dc3545 solid;
+        background-color: transparent;
+      }
+      ::placeholder {
+        color: rgba($color: #444, $alpha: 0.45);
+        font-style: italic;
+      }
+    }
+  }
+}
+
+footer {
+    .section1{
+        
+      .social-icons {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          li {
+            list-style: none;
+            margin: 0px 25px ;
+            a {
+              color: #dc3545;
+              i{
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+}
 @media (max-width: 991.98px) {
   .navbar {
     .container {
@@ -169,65 +265,12 @@ p {
       }
     }
   }
-}
-section {
-  margin: 1% 0%;
-}
-.bg-white {
-  .container {
-    .recipe {
-      padding: 5%;
-      // border: black solid 1px;
-      border-radius: 5px;
+  .light {
+    text-align: center;
+    .section {
+      padding: 0px;
       img {
-        width: 100%;
-        border-radius: 5px;
-      }
-      .description {
-        padding: 2.5% 5%;
-      }
-    }
-    .recipe:hover {
-      cursor: pointer;
-      border-radius: 15px;
-      transition-duration: 1s;
-      height: 760px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      .description {
-        display: block;
-        transition-duration: 1s;
-      }
-    }
-  }
-}
-.light {
-  background-color: map-get($colors, "light");
-  padding: 1%;
-  h1 {
-    margin: 25px 16%;
-  }
-  .section {
-    padding: 5%;
-    height: 450px;
-    img {
-      height: 100%;
-      padding-left: 30%;
-    }
-    form {
-      input {
-        display: block;
-        margin: 20px 0%;
-        padding: 0.5% 10px;
-        width: 100%;
-        border: transparent;
-        border-bottom: 2px #dc3545 solid;
-        background-color: transparent;
-      }
-      ::placeholder {
-        color: rgba($color: #444, $alpha: 0.45);
-        font-style: italic;
-        // font-size: 1.5em;
+        padding-left: 0px;
       }
     }
   }
