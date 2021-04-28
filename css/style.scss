@@ -1,0 +1,21 @@
+$colors :(
+    'Green' : #81b214,
+    'lime' : #bfdcae,
+    'light' : #f1f1e8,
+    'pink' : #ffb0b0
+);
+$fonts :(
+    'headings' : "cotoris",
+    'else' : "'Hind Vadodara', sans-serif",
+);
+@font-face {
+    font-family: "cotoris";
+    src: url(font/Cotoris.ttf);
+    src: url(font/CotorisItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Vadodara', sans-serif;
+
+}
