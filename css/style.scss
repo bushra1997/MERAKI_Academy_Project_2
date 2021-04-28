@@ -147,14 +147,16 @@ a {
     margin: 1% 0%;
     .container{
         .recipe{
-            padding: 2.5% 5%;
-            height: 740px;
-            border: black solid 1px;
+            padding: 5%;
+            // border: black solid 1px;
+            border-radius: 5px;
             img{
                 width: 100%;
+                border-radius: 5px;
             }
             .description{
                 padding: 2.5% 5%;
+                display: none;
                 h3{
                     font-weight: 600;
                 }
@@ -167,8 +169,15 @@ a {
             }
         }
         .recipe:hover{
+            cursor: pointer;
             border-radius: 15px ;
             transition-duration: 1s;
+            height: 740px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            .description{
+                display: block;
+                transition-duration: 1s;
+            }
         }
     }
 }
