@@ -21,6 +21,7 @@ h1 {
   margin: 25px 0%;
   color: #444;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h1:hover {
@@ -51,12 +52,13 @@ p {
 }
 
 .navbar .container .navbar-brand {
-  background-color: #f1f1e8;
-  color: #81b214;
-  padding: 3% 2.5% 1%;
+  background-color: #eaede8;
+  color: #50684b;
+  padding: 3% 1.5% 1%;
   font-size: 25px;
   margin-top: -3.2%;
-  border-radius: 25px;
+  border-radius: 10px;
+  letter-spacing: -1px;
 }
 
 .navbar .container .navbar-brand span {
@@ -70,16 +72,47 @@ p {
 }
 
 .navbar .container .navbar-nav .nav-item .nav-link {
-  color: #f1f1e8;
+  color: #eaede8;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
 }
 
 .navbar .container form input {
-  border-bottom: 2px #ffb0b0 solid;
+  border-bottom: 1px rgba(234, 237, 232, 0.45) solid;
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: 0px;
+}
+
+.navbar .container form ::-webkit-input-placeholder {
+  color: #eaede8;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.navbar .container form :-ms-input-placeholder {
+  color: #eaede8;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.navbar .container form ::-ms-input-placeholder {
+  color: #eaede8;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.navbar .container form ::placeholder {
+  color: #eaede8;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
 }
 
 .navbar.scrolled {
@@ -127,7 +160,7 @@ p {
     font-size: 25px;
   }
   .navbar .container .navbar-toggler-icon {
-    color: #f1f1e8;
+    color: #eaede8;
     font-size: 25px;
   }
   .navbar .container div {
@@ -184,7 +217,7 @@ section {
 }
 
 .light {
-  background-color: #f1f1e8;
+  background-color: #eaede8;
   padding: 1%;
 }
 

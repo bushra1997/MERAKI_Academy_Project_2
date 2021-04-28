@@ -1,7 +1,7 @@
 $colors: (
-  "Green": #81b214,
+  "Green": #50684b,
   "lime": #bfdcae,
-  "light": #f1f1e8,
+  "light": #eaede8,
   "pink": #ffb0b0,
 );
 $fonts: (
@@ -28,6 +28,7 @@ h1 {
   margin: 25px 0%;
   color: #444;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 h1:hover {
   color: #dc3545;
@@ -55,10 +56,11 @@ p {
     .navbar-brand {
       background-color: map-get($map: $colors, $key: "light");
       color: map-get($colors, "Green");
-      padding: 3% 2.5% 1%;
+      padding: 3% 1.5% 1%;
       font-size: 25px;
       margin-top: -3.2%;
-      border-radius: 25px;
+      border-radius: 10px;
+      letter-spacing: -1px;
       span {
         color: #41580e;
         font-size: 36px;
@@ -70,17 +72,26 @@ p {
         margin-right: 15px;
         .nav-link {
           color: map-get($colors, "light");
+          font-size: 15px;
+          font-weight: 200;
+          letter-spacing: 1.5px;
         }
       }
     }
     form {
       input {
-        border-bottom: 2px #ffb0b0 solid;
+        border-bottom: 1px rgba($color: #eaede8, $alpha: 0.45) solid;
         background-color: transparent;
         border-top: none;
         border-left: none;
         border-right: none;
         border-radius: 0px;
+      }
+      ::placeholder {
+        color: map-get($colors, "light");
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
       }
     }
   }
@@ -200,8 +211,7 @@ section {
     padding: 5%;
     height: 450px;
     img {
-        
-        height: 100%;
+      height: 100%;
       padding-left: 30%;
     }
     form {
