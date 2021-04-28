@@ -18,6 +18,18 @@ $fonts: (
   padding: 0;
   font-family: "Hind Vadodara", sans-serif;
 }
+h1,h2,h3, span{
+    font-family: "cotoris"; 
+}
+h1{
+    margin: 25px 0%;
+    color: #444;
+    font-weight: 600;
+}
+h1:hover{
+    color: #ffb0b0;
+    cursor: pointer;
+}
 a {
   text-decoration: none;
 }
@@ -33,6 +45,7 @@ a {
       span {
         color: #41580e;
         font-size: 36px;
+        font-weight: 800;
       }
     }
     .navbar-nav {
@@ -54,6 +67,10 @@ a {
       }
     }
   }
+}
+// needs an update
+.navbar.scrolled {
+    display: none !important;
 }
 .carousel {
   position: relative !important;
@@ -124,4 +141,34 @@ a {
       }
     }
   }
+}
+
+.bg-white{
+    margin: 1% 0%;
+    .container{
+        .recipe{
+            padding: 2.5% 5%;
+            height: 740px;
+            border: black solid 1px;
+            img{
+                width: 100%;
+            }
+            .description{
+                padding: 2.5% 5%;
+                h3{
+                    font-weight: 600;
+                }
+                h3:hover{
+                    color: #ffb0b0;
+                }
+                p{
+                    font-style: italic;
+                }
+            }
+        }
+        .recipe:hover{
+            border-radius: 15px ;
+            transition-duration: 1s;
+        }
+    }
 }

@@ -10,6 +10,21 @@
   font-family: "Hind Vadodara", sans-serif;
 }
 
+h1, h2, h3, span {
+  font-family: "cotoris";
+}
+
+h1 {
+  margin: 25px 0%;
+  color: #444;
+  font-weight: 600;
+}
+
+h1:hover {
+  color: #ffb0b0;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,6 +41,7 @@ a {
 .navbar .container .navbar-brand span {
   color: #41580e;
   font-size: 36px;
+  font-weight: 800;
 }
 
 .navbar .container .navbar-nav .nav-item {
@@ -43,6 +59,10 @@ a {
   border-left: none;
   border-right: none;
   border-radius: 0px;
+}
+
+.navbar.scrolled {
+  display: none !important;
 }
 
 .carousel {
@@ -106,5 +126,41 @@ a {
   .carousel .carousel-inner .carousel-item {
     height: auto;
   }
+}
+
+.bg-white {
+  margin: 1% 0%;
+}
+
+.bg-white .container .recipe {
+  padding: 2.5% 5%;
+  height: 740px;
+  border: black solid 1px;
+}
+
+.bg-white .container .recipe img {
+  width: 100%;
+}
+
+.bg-white .container .recipe .description {
+  padding: 2.5% 5%;
+}
+
+.bg-white .container .recipe .description h3 {
+  font-weight: 600;
+}
+
+.bg-white .container .recipe .description h3:hover {
+  color: #ffb0b0;
+}
+
+.bg-white .container .recipe .description p {
+  font-style: italic;
+}
+
+.bg-white .container .recipe:hover {
+  border-radius: 15px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=style.css.map */
