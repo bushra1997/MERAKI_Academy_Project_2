@@ -246,6 +246,10 @@ section {
           transition-duration: 1s;
 }
 
+.bg-white .container .article:hover .description h3 {
+  color: #dc3545;
+}
+
 .light h1 {
   margin: 25px 10%;
 }
