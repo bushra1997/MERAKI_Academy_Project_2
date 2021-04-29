@@ -20,7 +20,7 @@ $fonts: (
 }
 h1,
 h2,
-h3,
+h3,h5,
 span {
   font-family: "cotoris";
 }
@@ -143,10 +143,13 @@ section {
 }
 .bg-white {
   .container {
-    .recipe {
+    .article {
       padding: 5%;
+      height: 800px;
       // border: black solid 1px;
       border-radius: 5px;
+      display: flex;
+      flex-direction: column;
       img {
         width: 100%;
         border-radius: 5px;
@@ -154,12 +157,36 @@ section {
       .description {
         padding: 2.5% 5%;
       }
+      .footer-article{
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .right{
+            display: flex;
+            justify-content: center;
+            ul{
+                display: flex;
+                margin-bottom: 0px;
+                li{
+                    display: inline;
+                    align-self: center;
+                    p{
+                        display: inline;
+                    }
+                    i{
+                        color: #dc3545;
+                    }
+                }
+            }
+        }
+      }
     }
-    .recipe:hover {
+    .article:hover {
       cursor: pointer;
       border-radius: 15px;
       transition-duration: 1s;
-      height: 780px;
+      
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
       .description {

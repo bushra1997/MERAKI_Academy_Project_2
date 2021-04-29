@@ -12,7 +12,7 @@
 
 h1,
 h2,
-h3,
+h3, h5,
 span {
   font-family: "cotoris";
 }
@@ -165,31 +165,82 @@ section {
   padding: 1%;
 }
 
-.bg-white .container .recipe {
+.bg-white .container .article {
   padding: 5%;
+  height: 800px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.bg-white .container .recipe img {
+.bg-white .container .article img {
   width: 100%;
   border-radius: 5px;
 }
 
-.bg-white .container .recipe .description {
+.bg-white .container .article .description {
   padding: 2.5% 5%;
 }
 
-.bg-white .container .recipe:hover {
+.bg-white .container .article .footer-article {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bg-white .container .article .footer-article .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-white .container .article .footer-article .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.bg-white .container .article .footer-article .right ul li {
+  display: inline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bg-white .container .article .footer-article .right ul li p {
+  display: inline;
+}
+
+.bg-white .container .article .footer-article .right ul li i {
+  color: #dc3545;
+}
+
+.bg-white .container .article:hover {
   cursor: pointer;
   border-radius: 15px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-  height: 780px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bg-white .container .recipe:hover .description {
+.bg-white .container .article:hover .description {
   display: block;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
