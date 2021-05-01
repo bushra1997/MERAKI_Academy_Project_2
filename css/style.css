@@ -12,7 +12,8 @@
 
 h1,
 h2,
-h3, h5,
+h3,
+h5,
 span {
   font-family: "cotoris";
 }
@@ -163,6 +164,10 @@ section {
 .light {
   background-color: #f2f2f2;
   padding: 1%;
+}
+
+.bg-white .container #more {
+  display: none;
 }
 
 .bg-white .container .article {

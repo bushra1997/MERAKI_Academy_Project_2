@@ -20,7 +20,8 @@ $fonts: (
 }
 h1,
 h2,
-h3,h5,
+h3,
+h5,
 span {
   font-family: "cotoris";
 }
@@ -115,7 +116,7 @@ p {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba($color: #000000, $alpha: 0.40);
+      background-color: rgba($color: #000000, $alpha: 0.4);
     }
     .carousel-caption {
       top: auto;
@@ -143,6 +144,9 @@ section {
 }
 .bg-white {
   .container {
+      #more{
+          display: none;
+      }
     .article {
       padding: 5%;
       height: 800px;
@@ -157,28 +161,28 @@ section {
       .description {
         padding: 2.5% 5%;
       }
-      .footer-article{
+      .footer-article {
         margin-top: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        .right{
+        .right {
+          display: flex;
+          justify-content: center;
+          ul {
             display: flex;
-            justify-content: center;
-            ul{
-                display: flex;
-                margin-bottom: 0px;
-                li{
-                    display: inline;
-                    align-self: center;
-                    p{
-                        display: inline;
-                    }
-                    i{
-                        color: #dc3545;
-                    }
-                }
+            margin-bottom: 0px;
+            li {
+              display: inline;
+              align-self: center;
+              p {
+                display: inline;
+              }
+              i {
+                color: #dc3545;
+              }
             }
+          }
         }
       }
     }
@@ -191,8 +195,8 @@ section {
       .description {
         display: block;
         transition-duration: 1s;
-        h3{
-            color: #dc3545;
+        h3 {
+          color: #dc3545;
         }
       }
     }
@@ -233,30 +237,28 @@ section {
 }
 
 footer {
-    .section1{
-        
-      .social-icons {
-        ul {
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          li {
-            list-style: none;
-            margin: 0px 25px ;
-            a {
-              color: #dc3545;
-              i{
-                font-size: 26px;
-              }
+  .section1 {
+    .social-icons {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        li {
+          list-style: none;
+          margin: 0px 25px;
+          a {
+            color: #dc3545;
+            i {
+              font-size: 26px;
             }
-            a:hover{
-                color: #ffb0b0;
-            }
+          }
+          a:hover {
+            color: #ffb0b0;
           }
         }
       }
     }
-
+  }
 }
 @media (max-width: 991.98px) {
   .navbar {
@@ -301,8 +303,8 @@ footer {
   }
   .light {
     text-align: center;
-    .width{
-        max-width: 100%;
+    .width {
+      max-width: 100%;
     }
     .section {
       padding: 0px;
