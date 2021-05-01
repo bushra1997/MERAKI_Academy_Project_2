@@ -167,8 +167,8 @@ p {
   position: fixed;
   bottom: 75px;
   right: 30px;
-  -webkit-box-shadow: 0 0 5px 1px rgba(38, 38, 38, 0.69);
-          box-shadow: 0 0 5px 1px rgba(38, 38, 38, 0.69);
+  -webkit-box-shadow: 0 0 5px 1px rgba(92, 91, 91, 0.69);
+          box-shadow: 0 0 5px 1px rgba(92, 91, 91, 0.69);
   -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
   z-index: 1000;
