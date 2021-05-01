@@ -3,6 +3,6 @@ $(window).scroll(() => {
 });
 
 $('#btn-more').on('click', () => {
-    $('.more').slideDown(2500);
+    $('.more').show(2500);
     $('#btn-more').hide(1000);
 })
