@@ -169,8 +169,8 @@ p {
   right: 30px;
   -webkit-box-shadow: 0 0 5px 1px rgba(92, 91, 91, 0.69);
           box-shadow: 0 0 5px 1px rgba(92, 91, 91, 0.69);
-  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   z-index: 1000;
   padding: 0.35rem;
 }
@@ -408,7 +408,7 @@ footer .section1 .social-icons ul li a:hover {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .bg-white .container #article {
     height: -webkit-fit-content;
     height: -moz-fit-content;

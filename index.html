@@ -72,6 +72,7 @@
               <button
                 class="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
+                id="search"
               >
                 <i class="fas fa-search" style="color: #f2f2f2"></i>
               </button>
@@ -425,7 +426,19 @@
                 <form action="">
                   <input type="text" placeholder="Name" />
                   <input type="email" placeholder="Email" />
-                  <input type="checkbox" name="agree" id="agree" style="display: inline; width: min-content; margin-right: 5px;align-self: center;"><label for="agree"><span>I agree to receive this newsletter.</span></label>
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    id="agree"
+                    style="
+                      display: inline;
+                      width: min-content;
+                      margin-right: 5px;
+                      align-self: center;
+                    "
+                  /><label for="agree"
+                    ><span>I agree to receive this newsletter.</span></label
+                  >
                   <button type="button" class="btn btn-outline-danger">
                     Subscribe<i
                       style="margin-left: 5px"
@@ -445,7 +458,7 @@
         <h1 class="text-center">Articles</h1>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="article" id='article'>
+            <div class="article" id="article">
               <div class="image">
                 <img src="./images/article1.jpg" alt="" />
               </div>
@@ -486,7 +499,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="article" id='article'>
+            <div class="article" id="article">
               <div class="image">
                 <img src="./images/article2.jpg" alt="" />
               </div>
@@ -527,7 +540,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="article" id='article'>
+            <div class="article" id="article">
               <div class="image">
                 <img src="./images/article3.jpg" alt="" />
               </div>
@@ -547,7 +560,7 @@
                     <li>
                       <button class="btn">
                         <i class="far fa-heart"></i>
-                        <p>125</p>
+                        <!-- <p>125</p> -->
                       </button>
                     </li>
                     <li>
@@ -558,7 +571,7 @@
                         class="btn"
                       >
                         <i class="far fa-comments"></i>
-                        <p>22</p>
+                        <!-- <p>22</p> -->
                       </button>
                     </li>
                   </ul>
@@ -578,6 +591,7 @@
             type="button"
             class="btn btn-outline-danger"
             style="margin-top: 15px"
+            id="btn-more-articles"
           >
             More <i style="margin-left: 5px" class="fas fa-plus-circle"></i>
           </button>
