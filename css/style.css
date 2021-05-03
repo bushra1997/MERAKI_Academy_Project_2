@@ -198,6 +198,10 @@ section {
   display: none;
 }
 
+.bg-white .container #article {
+  height: 680px;
+}
+
 .bg-white .container .article {
   padding: 5%;
   height: 800px;
@@ -401,6 +405,28 @@ footer .section1 .social-icons ul li a:hover {
   }
   .light .section {
     padding: 0px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bg-white .container #article {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .bg-white .container .article {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .bg-white .container .article .description {
+    display: none;
+  }
+  .bg-white .container .article .description:hover {
+    display: block;
+  }
+  .bg-white .container .article .footer-article:hover {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

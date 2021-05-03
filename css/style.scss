@@ -169,6 +169,9 @@ section {
       #more{
           display: none;
       }
+    #article{
+      height: 680px;
+    }
     .article {
       padding: 5%;
       height: 800px;
@@ -332,6 +335,30 @@ footer {
       padding: 0px;
       img {
         // padding-left: 0px;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .bg-white{
+    .container{
+      #article{
+        height: fit-content;
+      }
+      .article{
+        height: max-content;
+        .description{
+          display: none;
+        }
+        // .footer-article{
+        //   display: none;
+        // }
+        .description:hover{
+          display: block;
+        }
+        .footer-article:hover{
+          display: block;
+        }
       }
     }
   }
