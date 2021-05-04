@@ -7,9 +7,9 @@ $(document).ready(() => {
     $(".more").fadeIn(), $("#btn-more").fadeOut();
   });
 
-  $('#btn-more-articles').on('click', () => {
-    $('#btn-more-articles').fadeOut();
-  })
+  $("#btn-more-articles").on("click", () => {
+    $("#btn-more-articles").fadeOut();
+  });
   $(window).scroll(() => {
     if ($(this).scrollTop() > 780) {
       $("#up-button").fadeIn();
@@ -26,7 +26,7 @@ $(document).ready(() => {
     );
   });
 
-//   for search bar
+  //   for search bar
   let array = [
     "Cheesecake",
     "Strawberry",
@@ -39,39 +39,36 @@ $(document).ready(() => {
     "Blueberry",
     "Muffin",
   ];
-  $('#search').on('click',() => {
-    array.forEach((element, index) =>{
-        if ($('.form-control').val().toLowerCase() === element.toLowerCase()){
-    
-        }else{
-    
-        }
-      })
-  })
+  $("#search").on("click", () => {
+    array.forEach((element, index) => {
+      if ($(".form-control").val().toLowerCase() === element.toLowerCase()) {
+      } else {
+      }
+    });
+  });
 
-  $('#subscribe').on('click' , () => {
-    let name = $('#name').val().trim();
-    let email = $('#email').val().trim();
+  $("#subscribe").on("click", () => {
+    let name = $("#name").val().trim();
+    let email = $("#email").val().trim();
     let userValidation = /^[a-zA-Z\u0600-\u06FF,-][\sa-zA-Z\u0600-\u06FF,-]*$/;
     let emailValidation = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (name === ''){
-        $('.name-span').text('Please enter your name !');
-    }else {
-        if(name.match(userValidation)){
-        $('.name-span').text('');
-    } else{
-        $('.name-span').text('Username is not valid !');
+    if (name === "") {
+      $(".name-span").text("Please enter your name !");
+    } else {
+      if (name.match(userValidation)) {
+        $(".name-span").text("");
+      } else {
+        $(".name-span").text("Username is not valid !");
+      }
     }
+    if (email === "") {
+      $(".email-span").text("Please enter your email !");
+    } else {
+      if (email.match(emailValidation)) {
+        $(".email-span").text("");
+      } else {
+        $(".email-span").text("Email is not valid !");
+      }
     }
-    if (email === ''){
-        $('.email-span').text('Please enter your email !');
-    } else{
-        if(email.match(emailValidation)){
-            $('.email-span').text('');
-        }else{
-            $('.email-span').text('Email is not valid !');
-        }
-    }
-  })
-  
+  });
 });
