@@ -424,9 +424,21 @@
               </div>
               <div class="form">
                 <form action="">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
                   <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    class="name"
+                  />
+                  <span class="name-span" id="span"></span>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    class="email"
+                  />
+                  <span class="email-span" id="span"></span><br>
+                  <!-- <input
                     type="checkbox"
                     name="agree"
                     id="agree"
@@ -436,10 +448,12 @@
                       margin-right: 5px;
                       align-self: center;
                     "
+                    required
                   /><label for="agree"
                     ><span>I agree to receive this newsletter.</span></label
-                  >
-                  <button type="button" class="btn btn-outline-danger">
+                  ><br> -->
+                  <!-- <span id="span">Check </span> -->
+                  <button type="button" class="btn btn-outline-danger" id="subscribe">
                     Subscribe<i
                       style="margin-left: 5px"
                       class="fas fa-envelope"
